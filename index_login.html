@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign In</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            background-color: #dc0808;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            width: 880px;
+            max-width: 100%;
+            min-height: 520px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-container {
+            width: 50%;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .form-container h1 {
+            color: #f5f0f0;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .form-container span {
+            font-size: 14px;
+            color: #eaecee;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #f4ebeb;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .form-container a {
+            color: #f0f2f3;
+            font-size: 14px;
+            text-decoration: none;
+            display: block;
+            margin: 15px 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .form-container a:hover {
+            color: #d6d7e1;
+        }
+
+        .form-container button {
+            background-color: #096e73;
+            color: #ffffff;
+            font-size: 14px;
+            padding: 12px 50px;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            letter-spacing: 0.6px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .form-container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .form-container h1 {
+                font-size: 24px;
+            }
+
+            .form-container span {
+                font-size: 12px;
+            }
+
+            .form-container input {
+                padding: 10px;
+                font-size: 12px;
+            }
+
+            .form-container button {
+                padding: 10px 40px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sign In Form -->
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <span>login an account by using phone no</span>
+                <input type="number" placeholder="Number" required>
+                <input type="password" placeholder="Password" required>
+                <a href="#">Forgot Your Password?</a>
+                <button type="submit">Sign In</button>
+                <a href="/index.html">Create a new Account</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
